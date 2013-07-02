@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         typescript: {
             app: {
                 src: ["app/app.ts"],
-                dest: "app/app.js",
+                dest: "./dist/",
                 options: {
                     ES5: true
                 }
