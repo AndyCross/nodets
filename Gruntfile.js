@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         typescript: {
             app: {
-                src: ["app/app.ts"],
+                src: ["server/server.ts"],
                 dest: "./dist/",
                 options: {
                     ES5: true
@@ -14,10 +14,7 @@ module.exports = function (grunt) {
       nodemon: {
           dev: {
             options: {
-              file: 'dist/app/app.js',
-              env: {
-                PORT: '8181'
-              }
+              file: 'dist/server/server.js'
             }
           }
       }
